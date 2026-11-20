@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "exportedAt": "2026-11-20T00:00:00.000Z",
+  "tabs": [
+    {
+      "id": "t-example",
+      "title": "Practice line",
+      "artist": "",
+      "genre": "Exercise",
+      "notes": "Example from the old bouzouksis.com page. Edit or delete it.",
+      "lines": [
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 4
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 2
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "D": 0
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "a": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 2
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 2
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 4
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 2
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 2
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 0
+            }
+          }
+        ]
+      ],
+      "createdAt": "2026-11-20T00:00:00.000Z",
+      "updatedAt": "2026-11-20T00:00:00.000Z"
+    }
+  ]
+}
