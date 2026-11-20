@@ -11,12 +11,6 @@ npm test                      # unit tests (Node 20+)
 
 ES modules need a server; opening `index.html` from disk won't work.
 
-## Publish on GitHub Pages
-
-1. Create a repo named `tabpad` and push this folder to `main`.
-2. Repo **Settings → Pages → Build and deployment**: Source *Deploy from a branch*, branch `main`, folder `/ (root)`.
-3. The site is live at `https://<user>.github.io/tabpad/` in about a minute.
-
 ## How saving works
 
 | Who | Sees | Can edit |
