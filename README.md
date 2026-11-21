@@ -11,6 +11,12 @@ npm test                      # unit tests (Node 20+)
 
 ES modules need a server; opening `index.html` from disk won't work.
 
+## Publish on GitHub Pages
+
+1. Create a repo named `tabpad` and push this folder to `main`.
+2. Repo **Settings → Pages → Build and deployment**: Source *Deploy from a branch*, branch `main`, folder `/ (root)`.
+3. The site is live at `https://<user>.github.io/tabpad/` in about a minute.
+
 ## How saving works
 
 | Who | Sees | Can edit |
@@ -32,8 +38,8 @@ Risk: unpublished edits exist only in one browser. Clearing site data or switchi
 | Method | How |
 |---|---|
 | Fretboard | Click a note. The headstock column is the open string (fret 0). |
-| Keyboard | `d` top, `a` middle, `D` bass, then the fret. `0` and `2–9` enter instantly; after `1` type the second digit, or `Space` for fret 1. Greek layout works (`δ α Δ`). |
-| Text | `d0 a2 \| d5+a7 _ x2`, one tab line per text line. Open **Type or paste as text**. |
+| Keyboard | `d` top, `a` middle, `D` bass, then the fret. `0` and `2–9` enter instantly; after `1` type the second digit, or `Shift` for fret 1. `Space` adds an empty column for timing. Greek layout works (`δ α Δ`). |
+| Text | `d0 - a2 \| d5+a7 - _ x2` (`-` = empty column), one tab line per text line. Open **Type or paste as text**. |
 
 Keys: `←` `→` move the cursor, `Backspace` removes the highlighted column, `Enter` starts a new line, `c` toggles chord mode (notes stack in one column), `|` bar, `{` `}` repeats, `Ctrl+Z` undo. Rests and `x2–x4` are buttons. Click any column to select it; new notes insert after the selection.
 
@@ -48,6 +54,7 @@ Keys: `←` `→` move the cursor, `Backspace` removes the highlighted column, `
     "lines": [[
       { "type": "note", "frets": { "d": 5, "a": 7 } },
       { "type": "bar" },
+      { "type": "space" },
       { "type": "rest", "value": "_" },
       { "type": "repeat", "value": "x2" }
     ]]

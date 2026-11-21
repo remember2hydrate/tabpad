@@ -9,7 +9,7 @@ import { createFretboard } from '../fretboard.js';
 import { newTabId } from '../store.js';
 import {
   createEditorState, addNote, insertEvent, removeSelected, splitLine, moveCursor, setCursor,
-  compactLines, isEmptyTab, barEvent, restEvent, repeatEvent, REST_VALUES, REPEAT_VALUES,
+  compactLines, isEmptyTab, barEvent, spaceEvent, restEvent, repeatEvent, REST_VALUES, REPEAT_VALUES,
 } from '../tab-model.js';
 import { createFormatToggle } from './format-toggle.js';
 
@@ -66,6 +66,7 @@ export function renderEditor({ store, root, id }) {
     cursorLeft: () => { state = moveCursor(state, -1); renderTabEditor(); },
     cursorRight: () => { state = moveCursor(state, 1); renderTabEditor(); },
     bar: () => commit(insertEvent(state, barEvent())),
+    space: () => commit(insertEvent(state, spaceEvent())),
     toggleChord: () => setChordMode(!chordMode),
     repeatOpen: () => commit(insertEvent(state, repeatEvent('{'))),
     repeatClose: () => commit(insertEvent(state, repeatEvent('}'))),
@@ -98,6 +99,7 @@ export function renderEditor({ store, root, id }) {
     h('div', { class: 'controls__group' },
       chordButton,
       smallButton('|', 'Bar (key: |)', commands.bar),
+      smallButton('Space', 'Empty column for timing (key: Space)', commands.space),
       smallButton('New line', 'New line (key: Enter)', commands.newLine)),
     h('div', { class: 'controls__group', 'aria-label': 'Rests' },
       h('span', { class: 'controls__label' }, 'Rest'),
@@ -112,7 +114,8 @@ export function renderEditor({ store, root, id }) {
   const pendingChip = h('output', { class: 'pending', 'aria-live': 'polite' });
   const keyHelp = h('p', { class: 'key-help' },
     h('kbd', {}, 'd'), ' ', h('kbd', {}, 'a'), ' ', h('kbd', {}, 'D'), ' then fret  ·  ',
-    h('kbd', {}, 'Space'), ' after 1 for fret 1  ·  ',
+    h('kbd', {}, 'Shift'), ' after 1 for fret 1  ·  ',
+    h('kbd', {}, 'Space'), ' empty column  ·  ',
     h('kbd', {}, '←'), h('kbd', {}, '→'), ' move  ·  ',
     h('kbd', {}, 'Enter'), ' new line  ·  ', h('kbd', {}, 'c'), ' chord',
     pendingChip);
@@ -158,7 +161,7 @@ export function renderEditor({ store, root, id }) {
     activeLineEditor.replaceChildren(lineElement(state.lines[line], line));
   }
 
-  const textInput = h('textarea', { class: 'text-input', rows: 4, spellcheck: false, placeholder: 'd0 d0 a2 | d5+a7 _ x2' });
+  const textInput = h('textarea', { class: 'text-input', rows: 4, spellcheck: false, placeholder: 'd0 - d0 a2 | d5+a7 - _ x2' });
   const textErrors = h('ul', { class: 'text-errors', 'aria-live': 'polite' });
 
   function renderTabEditor() {
@@ -192,7 +195,7 @@ export function renderEditor({ store, root, id }) {
       return;
     }
     if (event.ctrlKey || event.metaKey || event.altKey) return;
-    if (keyboard.handleKey(event.key)) event.preventDefault();
+    if (keyboard.handleKey(event.key, { isRepeat: event.repeat })) event.preventDefault();
   }
   document.addEventListener('keydown', onKeyDown);
 
@@ -244,7 +247,7 @@ export function renderEditor({ store, root, id }) {
       tabEditor),
     h('details', { class: 'text-entry' },
       h('summary', {}, 'Type or paste as text'),
-      h('p', { class: 'hint' }, 'One line per tab line. d5 = top string fret 5, a = middle, D = bass. d5+a7 = chord. Also | _ ξ j { } x2 x3 x4.'),
+      h('p', { class: 'hint' }, 'One line per tab line. d5 = top string fret 5, a = middle, D = bass. d5+a7 = chord. - = empty column. Also | _ ξ j { } x2 x3 x4.'),
       textInput,
       textErrors,
       h('button', { type: 'button', class: 'button', onClick: applyText }, 'Apply text')),

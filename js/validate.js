@@ -14,6 +14,7 @@ function eventError(event) {
       return bad ? `bad fret for string "${bad}"` : null;
     }
     case 'bar':
+    case 'space':
       return null;
     case 'rest':
       return REST_VALUES.includes(event.value) ? null : `unknown rest "${event.value}"`;

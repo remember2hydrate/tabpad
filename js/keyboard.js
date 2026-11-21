@@ -1,6 +1,6 @@
 // Keyboard entry: string key (d / a / D), then the fret, e.g. "d5", "a0", "D12".
 // Frets 0 and 2–9 commit instantly. After "1" the app waits for a second digit;
-// press Space to enter fret 1 on its own.
+// press Shift to enter fret 1 on its own. Space adds an empty timing column.
 // Greek keyboard layout works too: δ = d, α = a, Δ = D, ψ = c.
 
 import { MAX_FRET, isStringKey } from './music.js';
@@ -14,6 +14,7 @@ const COMMAND_KEYS = Object.freeze({
   ArrowLeft: 'cursorLeft',
   ArrowRight: 'cursorRight',
   '|': 'bar',
+  ' ': 'space',
   c: 'toggleChord',
   '{': 'repeatOpen',
   '}': 'repeatClose',
@@ -78,8 +79,14 @@ export function createKeyboardInput(handlers) {
   }
 
   /** Returns true when the key was used, so the caller can preventDefault. */
-  function handleKey(rawKey) {
+  function handleKey(rawKey, { isRepeat = false } = {}) {
     const key = normalizeKey(rawKey);
+    // Shift also starts "D" and "|": committing first gives the same result as today.
+    // Returns false so Shift still works as a modifier.
+    if (key === 'Shift') {
+      if (!isRepeat) commit();
+      return false;
+    }
     if (isStringKey(key)) {
       commit();
       setPending({ stringKey: key, digits: '' });
@@ -87,10 +94,6 @@ export function createKeyboardInput(handlers) {
     }
     if (isDigit(key)) {
       handleDigit(key);
-      return true;
-    }
-    if (key === ' ') {
-      commit();
       return true;
     }
     if (key === 'Escape') {

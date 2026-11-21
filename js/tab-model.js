@@ -9,6 +9,7 @@ export const REPEAT_VALUES = Object.freeze(['{', '}', 'x2', 'x3', 'x4']);
 
 export const noteEvent = (frets) => ({ type: 'note', frets: { ...frets } });
 export const barEvent = () => ({ type: 'bar' });
+export const spaceEvent = () => ({ type: 'space' }); // empty column, for timing
 export const restEvent = (value) => ({ type: 'rest', value });
 export const repeatEvent = (value) => ({ type: 'repeat', value });
 

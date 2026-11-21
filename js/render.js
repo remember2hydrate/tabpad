@@ -20,6 +20,8 @@ function rawCells(event, format) {
       return STRINGS.map((string) => cellForString(event, string.key, format));
     case 'bar':
       return STRINGS.map(() => '|');
+    case 'space':
+      return STRINGS.map(() => '');
     case 'rest':
       return [event.value, '', ''];
     case 'repeat':

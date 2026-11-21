@@ -2,11 +2,14 @@
 //   d5  a0  D12     note on string d (top), a (middle), D (bass) at a fret
 //   d5+a7           chord: several strings in one column
 //   |               bar separator
+//   -               empty column (timing space)
 //   _  ξ  j         rests (4/4, 2/4, 1/4)
 //   {  }  x2 x3 x4  repeats
 
 import { MAX_FRET, isStringKey, STRING_KEYS } from './music.js';
-import { REST_VALUES, REPEAT_VALUES, noteEvent, barEvent, restEvent, repeatEvent } from './tab-model.js';
+import { REST_VALUES, REPEAT_VALUES, noteEvent, barEvent, spaceEvent, restEvent, repeatEvent } from './tab-model.js';
+
+const SPACE_TOKEN = '-';
 
 const NOTE_PATTERN = /^(.)(\d{1,2})$/u;
 
@@ -33,6 +36,7 @@ function parseNoteToken(token) {
 
 export function parseToken(token) {
   if (token === '|') return { event: barEvent() };
+  if (token === SPACE_TOKEN) return { event: spaceEvent() };
   if (REST_VALUES.includes(token)) return { event: restEvent(token) };
   if (REPEAT_VALUES.includes(token)) return { event: repeatEvent(token) };
   return parseNoteToken(token);
@@ -61,6 +65,8 @@ function serializeEvent(event) {
       return STRING_KEYS.filter((key) => key in event.frets).map((key) => `${key}${event.frets[key]}`).join('+');
     case 'bar':
       return '|';
+    case 'space':
+      return SPACE_TOKEN;
     default:
       return event.value;
   }

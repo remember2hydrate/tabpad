@@ -93,7 +93,13 @@ function typeKeys(keys) {
 
 test('d then 5 commits immediately', () => assert.deepEqual(typeKeys(['d', '5']).notes, ['d5']));
 test('a then 1 then 2 commits fret 12', () => assert.deepEqual(typeKeys(['a', '1', '2']).notes, ['a12']));
-test('D then 1 then Space commits fret 1', () => assert.deepEqual(typeKeys(['D', '1', ' ']).notes, ['D1']));
+test('D then 1 then Shift commits fret 1', () => assert.deepEqual(typeKeys(['D', '1', 'Shift']).notes, ['D1']));
+test('Shift before D keeps the pending note', () => assert.deepEqual(typeKeys(['d', '1', 'Shift', 'D', '3']).notes, ['d1', 'D3']));
+test('Space commits the pending fret then adds a space', () => assert.deepEqual(typeKeys(['d', '1', ' ']).commands, ['space']));
+test('space renders as an empty column on every string', () => {
+  assert.deepEqual(renderLine(parseText('d0 - d2').lines[0]), ['D---0-----2--', 'A------------', 'D------------']);
+});
+test('space round-trips through text', () => assert.equal(serializeText(parseText('d0 - a2').lines), 'd0 - a2'));
 test('greek layout δ maps to d', () => assert.deepEqual(typeKeys(['δ', '3']).notes, ['d3']));
 test('1 then 9 commits fret 19', () => assert.deepEqual(typeKeys(['d', '1', '9']).notes, ['d19']));
 test('Backspace with nothing pending removes', () => assert.deepEqual(typeKeys(['Backspace']).commands, ['remove']));
