@@ -144,13 +144,25 @@ export function renderEditor({ store, root, id }) {
     });
     if (state.cursor.line === lineIndex && state.cursor.index === events.length) parts.push(caret());
     parts.push(h('span', { class: 'tab-col tab-col--end', 'aria-hidden': 'true' }, LINE_END));
-    return h('div', { class: 'tab-line' }, parts);
+    const isActive = state.cursor.line === lineIndex;
+    return h('div', { class: isActive ? 'tab-line is-active' : 'tab-line' }, parts);
+  }
+
+  // The line being edited, pinned under the fretboard so long tabs need no scrolling.
+  const activeLineTitle = h('h2', {});
+  const activeLineEditor = h('div', { class: 'tab-editor tab-editor--active', 'aria-label': 'Line being edited' });
+
+  function renderActiveLine() {
+    const { line } = state.cursor;
+    activeLineTitle.textContent = `Editing line ${line + 1} of ${state.lines.length}`;
+    activeLineEditor.replaceChildren(lineElement(state.lines[line], line));
   }
 
   const textInput = h('textarea', { class: 'text-input', rows: 4, spellcheck: false, placeholder: 'd0 d0 a2 | d5+a7 _ x2' });
   const textErrors = h('ul', { class: 'text-errors', 'aria-live': 'polite' });
 
   function renderTabEditor() {
+    renderActiveLine();
     tabEditor.replaceChildren(...state.lines.map(lineElement));
     if (document.activeElement !== textInput) textInput.value = serializeText(state.lines);
   }
@@ -224,6 +236,7 @@ export function renderEditor({ store, root, id }) {
       field('Title', titleInput), field('Artist', artistInput), field('Genre', genreInput), genreOptions,
       h('div', { class: 'meta-form__notes' }, field('Notes', notesInput))),
     createFretboard(placeNote),
+    h('section', { class: 'tab-panel tab-panel--active' }, activeLineTitle, activeLineEditor),
     controls,
     keyHelp,
     h('section', { class: 'tab-panel' },

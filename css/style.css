@@ -361,3 +361,10 @@ kbd {
   .controls__group--end { margin-left: 0; }
   .key-help { display: none; }
 }
+
+/* ---------- pinned line being edited ---------- */
+.tab-panel--active { margin-top: -8px; gap: 6px; }
+.tab-panel--active h2 { font-size: 0.82rem; font-weight: 500; color: var(--muted); }
+.tab-editor--active { min-height: 0; padding: 14px 20px; border-color: var(--brass); }
+.tab-editor:not(.tab-editor--active) .tab-line { margin-left: -11px; padding-left: 8px; border-left: 3px solid transparent; }
+.tab-editor:not(.tab-editor--active) .tab-line.is-active { border-left-color: var(--brass); }
