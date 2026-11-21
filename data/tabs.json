@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-11-20T19:45:59.050Z",
+  "exportedAt": "2026-11-21T14:20:54.487Z",
   "tabs": [
     {
       "id": "t-example",
@@ -177,8 +177,8 @@
     },
     {
       "id": "t-mwpdh1o9-e38e",
-      "title": "Τα ματόκλαδα σου λάμπουν",
-      "artist": "Βαμβακάρης",
+      "title": "Ta matoklada sou lampoun",
+      "artist": "Markos Vamvakaris",
       "genre": "",
       "notes": "",
       "lines": [
@@ -877,8 +877,1381 @@
           }
         ]
       ],
-      "updatedAt": "2026-11-20T19:44:10.942Z",
+      "updatedAt": "2026-11-21T14:16:50.265Z",
       "createdAt": "2026-11-20T19:44:10.942Z"
+    },
+    {
+      "id": "t-mwqf77un-nowv",
+      "title": "Xatzikiriakeio",
+      "artist": "Dimitris Gkogkos",
+      "genre": "",
+      "notes": "",
+      "lines": [
+        [
+          {
+            "type": "repeat",
+            "value": "{"
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 4
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 9
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 9
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          },
+          {
+            "type": "repeat",
+            "value": "}"
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "a": 4
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          }
+        ],
+        [
+          {
+            "type": "repeat",
+            "value": "{"
+          },
+          {
+            "type": "repeat",
+            "value": "}"
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 13
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 15
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 15
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 9
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 9
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 7,
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 9,
+              "a": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 7,
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 9,
+              "a": 11
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 12
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8,
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 14,
+              "a": 13
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 12,
+              "a": 13
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          }
+        ],
+        [
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "d": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 10
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 8
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 7
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 0
+            }
+          },
+          {
+            "type": "note",
+            "frets": {
+              "a": 5
+            }
+          }
+        ]
+      ],
+      "updatedAt": "2026-11-21T14:15:19.890Z",
+      "createdAt": "2026-11-21T13:28:08.173Z"
     }
   ]
 }
